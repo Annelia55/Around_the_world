@@ -95,29 +95,42 @@ a:hover {
   text-decoration: none;
 }
 
+/* line 19, ../sass/stylesheet.scss */
+body {
+  color: #727272;
+}
+
 /* HEADER */
-/* line 21, ../sass/stylesheet.scss */
+/* line 23, ../sass/stylesheet.scss */
 .container {
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* line 24, ../sass/stylesheet.scss */
-.navbar {
-  display: inline-block;
+/* line 26, ../sass/stylesheet.scss */
+#navbar {
+  padding: 20px 0;
+}
+/* line 28, ../sass/stylesheet.scss */
+#navbar h1 {
+  font-size: 38px;
+}
+/* line 31, ../sass/stylesheet.scss */
+#navbar a {
+  color: #727272;
 }
 
-/* line 27, ../sass/stylesheet.scss */
+/* line 35, ../sass/stylesheet.scss */
 .header_section {
   background: url("../images/header_bg.jpg") no-repeat center center;
   background-size: cover;
   max-height: 500px;
 }
-/* line 31, ../sass/stylesheet.scss */
+/* line 39, ../sass/stylesheet.scss */
 .header_section .header_content {
   height: 550px;
   color: rgba(223, 234, 204, 0.81);
 }
-/* line 34, ../sass/stylesheet.scss */
+/* line 42, ../sass/stylesheet.scss */
 .header_section .header_content p {
   padding-top: 380px;
   padding-right: 10px;
@@ -127,17 +140,32 @@ a:hover {
 }
 
 /* CONTENT */
-/* line 44, ../sass/stylesheet.scss */
+/* line 52, ../sass/stylesheet.scss */
 .articles {
-  padding: 20px 15px;
+  padding: 30px 10px;
 }
-/* line 46, ../sass/stylesheet.scss */
+/* line 54, ../sass/stylesheet.scss */
+.articles .article-section {
+  padding: 20px;
+}
+/* line 57, ../sass/stylesheet.scss */
+.articles h2 {
+  text-align: center;
+  font-size: 28px;
+}
+/* line 61, ../sass/stylesheet.scss */
+.articles a {
+  color: #727272;
+}
+/* line 64, ../sass/stylesheet.scss */
 .articles p {
   text-align: justify;
+  padding-bottom: 5px;
+  font-size: 16px;
 }
-/* line 49, ../sass/stylesheet.scss */
+/* line 69, ../sass/stylesheet.scss */
 .articles .article_img {
   max-width: 100%;
   height: auto;
-  padding: 15px 0;
+  padding: 15px 0 20px 0;
 }
