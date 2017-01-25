@@ -97,25 +97,47 @@ a:hover {
 
 /* HEADER */
 /* line 21, ../sass/stylesheet.scss */
+.container {
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* line 24, ../sass/stylesheet.scss */
+.navbar {
+  display: inline-block;
+}
+
+/* line 27, ../sass/stylesheet.scss */
 .header_section {
   background: url("../images/header_bg.jpg") no-repeat center center;
   background-size: cover;
-  background-attachment: fixed;
-  max-height: 800px;
-}
-/* line 26, ../sass/stylesheet.scss */
-.header_section .header_content {
-  height: 800px;
-  background-color: rgba(0, 0, 0, 0.42);
-  color: #dfeacc;
-  text-align: left;
+  max-height: 500px;
 }
 /* line 31, ../sass/stylesheet.scss */
-.header_section .header_content h1 {
-  font-size: 40px;
+.header_section .header_content {
+  height: 550px;
+  color: rgba(223, 234, 204, 0.81);
 }
 /* line 34, ../sass/stylesheet.scss */
-.header_section .header_content h2 {
-  font-size: 30px;
-  line-height: 26px;
+.header_section .header_content p {
+  padding-top: 380px;
+  padding-right: 10px;
+  text-align: right;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* CONTENT */
+/* line 44, ../sass/stylesheet.scss */
+.articles {
+  padding: 20px 15px;
+}
+/* line 46, ../sass/stylesheet.scss */
+.articles p {
+  text-align: justify;
+}
+/* line 49, ../sass/stylesheet.scss */
+.articles .article_img {
+  max-width: 100%;
+  height: auto;
+  padding: 15px 0;
 }
