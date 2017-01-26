@@ -104,90 +104,93 @@ body {
 /* line 23, ../sass/stylesheet.scss */
 .container {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
-  background-color: rgba(223, 234, 204, 0.36);
+  background-color: rgba(223, 234, 204, 0.31);
 }
 
 /* line 27, ../sass/stylesheet.scss */
 #navbar {
   padding: 20px 0;
 }
-/* line 29, ../sass/stylesheet.scss */
-#navbar h1 {
-  font-size: 38px;
-}
-/* line 34, ../sass/stylesheet.scss */
+/* line 31, ../sass/stylesheet.scss */
 #navbar .navbar-links a {
   color: #727272;
-  float: right;
+  float: left;
   padding-left: 10px;
 }
 
-/* line 41, ../sass/stylesheet.scss */
-.header_section {
+/* line 38, ../sass/stylesheet.scss */
+.header-section {
   background: url("../images/header_bg.jpg") no-repeat center center;
   background-size: cover;
   max-height: 500px;
 }
-/* line 45, ../sass/stylesheet.scss */
-.header_section .header_content {
+/* line 42, ../sass/stylesheet.scss */
+.header-section .header-content {
   height: 550px;
-  color: rgba(223, 234, 204, 0.81);
 }
-/* line 48, ../sass/stylesheet.scss */
-.header_section .header_content p {
-  padding-top: 380px;
+/* line 44, ../sass/stylesheet.scss */
+.header-section .header-content h1 {
+  font-size: 34px;
+  float: right;
+  padding-top: 35px;
+  color: rgba(223, 234, 204, 0.91);
+}
+/* line 50, ../sass/stylesheet.scss */
+.header-section .header-content p {
+  padding-top: 360px;
   padding-right: 10px;
   text-align: right;
   font-size: 20px;
   line-height: 36px;
+  color: rgba(223, 234, 204, 0.81);
 }
 
 /* CONTENT */
-/* line 59, ../sass/stylesheet.scss */
+/* line 62, ../sass/stylesheet.scss */
 .articles a {
   color: #727272;
 }
-/* line 62, ../sass/stylesheet.scss */
+/* line 65, ../sass/stylesheet.scss */
 .articles .main-article-section {
   margin: 10px 10px 20px 20px;
   background-color: #fff;
   border: 2px solid rgba(223, 234, 204, 0.81);
   border-radius: 10px;
 }
-/* line 68, ../sass/stylesheet.scss */
+/* line 71, ../sass/stylesheet.scss */
 .articles h2 {
   text-align: center;
   font-size: 28px;
   padding: 15px 0 15px 0;
   border-bottom: 2px solid rgba(223, 234, 204, 0.81);
 }
-/* line 74, ../sass/stylesheet.scss */
+/* line 77, ../sass/stylesheet.scss */
 .articles p {
   text-align: justify;
   padding: 20px 10px 20px 10px;
   font-size: 16px;
   line-height: 24px;
 }
-/* line 80, ../sass/stylesheet.scss */
+/* line 83, ../sass/stylesheet.scss */
 .articles .article_img {
   max-width: 100%;
   height: auto;
+  border: 3px solid #fff;
 }
-/* line 84, ../sass/stylesheet.scss */
+/* line 88, ../sass/stylesheet.scss */
 .articles .old-article-section {
   margin: 10px 10px 20px 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  border: 2px solid rgba(223, 234, 204, 0.81);
 }
-/* line 89, ../sass/stylesheet.scss */
+/* line 90, ../sass/stylesheet.scss */
 .articles .old-article-section .old-article-section-1,
 .articles .old-article-section .old-article-section-2,
 .articles .old-article-section .old-article-section-3,
 .articles .old-article-section .old-article-section-4 {
   border: 1px solid rgba(223, 234, 204, 0.81);
+  border-radius: 10px;
+  background-color: #fff;
 }
-/* line 94, ../sass/stylesheet.scss */
+/* line 97, ../sass/stylesheet.scss */
 .articles .old-article-section .old-article-section-1 h3,
 .articles .old-article-section .old-article-section-2 h3,
 .articles .old-article-section .old-article-section-3 h3,
@@ -196,7 +199,7 @@ body {
   font-size: 18px;
   padding-top: 15px;
 }
-/* line 99, ../sass/stylesheet.scss */
+/* line 102, ../sass/stylesheet.scss */
 .articles .old-article-section .old-article-section-1 .article_img,
 .articles .old-article-section .old-article-section-2 .article_img,
 .articles .old-article-section .old-article-section-3 .article_img,
