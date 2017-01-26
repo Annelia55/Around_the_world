@@ -104,33 +104,36 @@ body {
 /* line 23, ../sass/stylesheet.scss */
 .container {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+  background-color: rgba(223, 234, 204, 0.36);
 }
 
-/* line 26, ../sass/stylesheet.scss */
+/* line 27, ../sass/stylesheet.scss */
 #navbar {
   padding: 20px 0;
 }
-/* line 28, ../sass/stylesheet.scss */
+/* line 29, ../sass/stylesheet.scss */
 #navbar h1 {
   font-size: 38px;
 }
-/* line 31, ../sass/stylesheet.scss */
-#navbar a {
+/* line 34, ../sass/stylesheet.scss */
+#navbar .navbar-links a {
   color: #727272;
+  float: right;
+  padding-left: 10px;
 }
 
-/* line 35, ../sass/stylesheet.scss */
+/* line 41, ../sass/stylesheet.scss */
 .header_section {
   background: url("../images/header_bg.jpg") no-repeat center center;
   background-size: cover;
   max-height: 500px;
 }
-/* line 39, ../sass/stylesheet.scss */
+/* line 45, ../sass/stylesheet.scss */
 .header_section .header_content {
   height: 550px;
   color: rgba(223, 234, 204, 0.81);
 }
-/* line 42, ../sass/stylesheet.scss */
+/* line 48, ../sass/stylesheet.scss */
 .header_section .header_content p {
   padding-top: 380px;
   padding-right: 10px;
@@ -140,32 +143,65 @@ body {
 }
 
 /* CONTENT */
-/* line 52, ../sass/stylesheet.scss */
-.articles {
-  padding: 30px 10px;
-}
-/* line 54, ../sass/stylesheet.scss */
-.articles .article-section {
-  padding: 20px;
-}
-/* line 57, ../sass/stylesheet.scss */
-.articles h2 {
-  text-align: center;
-  font-size: 28px;
-}
-/* line 61, ../sass/stylesheet.scss */
+/* line 59, ../sass/stylesheet.scss */
 .articles a {
   color: #727272;
 }
-/* line 64, ../sass/stylesheet.scss */
+/* line 62, ../sass/stylesheet.scss */
+.articles .main-article-section {
+  margin: 10px 10px 20px 20px;
+  background-color: #fff;
+  border: 2px solid rgba(223, 234, 204, 0.81);
+  border-radius: 10px;
+}
+/* line 68, ../sass/stylesheet.scss */
+.articles h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 15px 0 15px 0;
+  border-bottom: 2px solid rgba(223, 234, 204, 0.81);
+}
+/* line 74, ../sass/stylesheet.scss */
 .articles p {
   text-align: justify;
-  padding-bottom: 5px;
+  padding: 20px 10px 20px 10px;
   font-size: 16px;
+  line-height: 24px;
 }
-/* line 69, ../sass/stylesheet.scss */
+/* line 80, ../sass/stylesheet.scss */
 .articles .article_img {
   max-width: 100%;
   height: auto;
-  padding: 15px 0 20px 0;
+}
+/* line 84, ../sass/stylesheet.scss */
+.articles .old-article-section {
+  margin: 10px 10px 20px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid rgba(223, 234, 204, 0.81);
+}
+/* line 89, ../sass/stylesheet.scss */
+.articles .old-article-section .old-article-section-1,
+.articles .old-article-section .old-article-section-2,
+.articles .old-article-section .old-article-section-3,
+.articles .old-article-section .old-article-section-4 {
+  border: 1px solid rgba(223, 234, 204, 0.81);
+}
+/* line 94, ../sass/stylesheet.scss */
+.articles .old-article-section .old-article-section-1 h3,
+.articles .old-article-section .old-article-section-2 h3,
+.articles .old-article-section .old-article-section-3 h3,
+.articles .old-article-section .old-article-section-4 h3 {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 15px;
+}
+/* line 99, ../sass/stylesheet.scss */
+.articles .old-article-section .old-article-section-1 .article_img,
+.articles .old-article-section .old-article-section-2 .article_img,
+.articles .old-article-section .old-article-section-3 .article_img,
+.articles .old-article-section .old-article-section-4 .article_img {
+  max-width: 100%;
+  height: auto;
+  padding: 10px 0 15px 0;
 }
