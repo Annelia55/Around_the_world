@@ -16,13 +16,14 @@ a {
     text-decoration: none;
   }
 }
-body {
-   color: rgb(114, 114, 114);
+.bg {
+  color: rgb(114, 114, 114);
+  background-color: rgba(223, 234, 204, 0.22);
  }
 /* HEADER */
 .container {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
-  background-color: rgba(223, 234, 204, 0.31);
+  background-color: rgba(223, 234, 204, 0.05);
 }
 #navbar {
   padding: 20px 0;
@@ -66,7 +67,6 @@ body {
     margin: 10px 10px 20px 20px;
     background-color: #fff;
     border: 2px solid rgba(223, 234, 204, 0.81);
-    border-radius: 10px;
   }
   h2 {
     text-align: center;
@@ -80,10 +80,10 @@ body {
     font-size: 16px;
     line-height: 24px;
   }
-  .article_img {
+  .article_img_main {
     max-width: 100%;
     height: auto;
-    border: 3px solid #fff;
+    border: 15px solid #fff;
   }
   .old-article-section {
     margin: 10px 10px 20px 20px;
@@ -97,13 +97,42 @@ body {
       h3 {
         text-align: center;
         font-size: 18px;
-        padding-top: 15px;
+        padding-top: 16px;
       }
       .article_img {
         max-width: 100%;
         height: auto;
-        padding: 10px 0 15px 0;
+        padding: 10px 0 16px 0;
       }
     }
   }
 }
+/* PAGINATION */
+.pagination {
+  margin: 30px 0;
+  border-radius: 5px;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: rgb(114, 114, 114);
+  border: 1px solid rgba(223, 234, 204, 0.81);
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  color: #23527c;
+  background-color: rgba(223, 234, 204, 0.81);
+  border-color: rgba(223, 234, 204, 0.81);
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  color: rgb(114, 114, 114);
+  background-color: rgba(223, 234, 204, 0.81);
+  border-color: rgba(223, 234, 204, 0.81);
+}
+
