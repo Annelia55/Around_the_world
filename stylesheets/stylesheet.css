@@ -274,6 +274,7 @@ body {
   background-color: #fff;
   margin-top: -30px;
   border-top: 3px solid rgba(223, 234, 204, 0.81);
+  /*ABOUT.html*/
 }
 /* line 159, ../sass/stylesheet.scss */
 .open-main-article-section h2 {
@@ -301,4 +302,11 @@ body {
   height: auto;
   float: right;
   padding: 15px 0 5px 15px;
+}
+/* line 183, ../sass/stylesheet.scss */
+.open-main-article-section .about-avatar {
+  border-radius: 50%;
+  max-width: 300px;
+  padding: 25px 25px 15px 10px;
+  float: left;
 }
