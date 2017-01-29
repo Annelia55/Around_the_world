@@ -1,6 +1,26 @@
 @import "compass", "compass/reset", "compass/css3/font-face", "media-queries", "compass/css3/border-radius", "compass/css3/transition";
 
-@include font-face("???", font-files("???.ttf"));
+//@include font-face("???", font-files("???.ttf"));   add new font
+$main-color: rgba(223, 234, 204, 0.81);
+$white-color: #fff;
+$grey-text: rgb(114, 114, 114);
+$article-section-margin: 10px 10px 20px 20px;
+
+%h2-style {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px 0 5px 0;
+}
+%p-style {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+}
+%links-hover {
+  text-decoration: none;
+  color: #000;
+  transition: all .7s;
+}
 
 /* for Bootstrap */
 .no-margin {margin: 0 !important}
@@ -8,15 +28,14 @@
   padding-right:0;
   padding-left:0;
 }
-/**/
+/* general */
 .left {float: left;}
 .right {float: right;}
 
 body {
-  color: rgb(114, 114, 114);
+  color: $grey-text;
   background-color: rgba(223, 234, 204, 0.22);
  }
-/* HEADER */
 .container {
   box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
   background-color: rgba(223, 234, 204, 0.05);
@@ -25,76 +44,72 @@ body {
   padding: 30px 0;
   .header-logo {
     h1 {
-      font-size: 30px;
+      color: $grey-text;
       float: right;
+      font-size: 30px;
       padding-top: -10px;
-      color: rgb(114, 114, 114);
     }
   }
   .navbar-links {
     font-size: 20px;
     a {
-      color: rgb(114, 114, 114);
+      color: $grey-text;
       float: left;
       padding-left: 10px;
       &:hover {
-        text-decoration: none;
-        color: #000;
-        transition: all .7s;
+        @extend %links-hover;
       }
     }
   }
 }
+
+/*---------------------------------------------INDEX.html-------------------------------------------------------------*/
+/* header */
 .header-section {
   background: url("../images/header_bg.jpg") no-repeat center center;
   background-size: cover;
   max-height: 500px;
+  border-top: 3px solid $main-color;
   .header-content {
     height: 500px;
     h1 {
-      font-size: 34px;
       float: right;
+      font-size: 34px;
       padding-top: 35px;
       color: rgba(223, 234, 204, 0.91);
     }
     p {
+      color: $main-color;
+      text-align: right;
       padding-top: 360px;
       padding-right: 10px;
-      text-align: right;
       font-size: 20px;
       line-height: 36px;
-      color: rgba(223, 234, 204, 0.81);
     }
   }
 }
-/* CONTENT */
+/* content */
 .articles {
-  margin-top: 30px;
+  padding-top: 30px;
   a {
-    color: rgb(114, 114, 114);
+    color: $grey-text;
     &:hover {
-      text-decoration: none;
-      color: #000;
-      transition: all .7s;
+      @extend %links-hover;
     }
   }
   .main-article-section {
-    margin: 10px 10px 20px 20px;
-    background-color: #fff;
-    border: 2px solid rgba(223, 234, 204, 0.81);
-    border-radius: 10px;
+    margin: $article-section-margin;
+    @include border-radius (10px);
+    background-color: $white-color;
+    border: 2px solid $main-color;
     h2 {
-      text-align: center;
-      font-size: 28px;
-      padding: 20px 0 5px 0;
+      @extend %h2-style;
     }
     p {
-      text-align: justify;
+      @extend %p-style;
       padding: 20px 10px 20px 10px;
-      font-size: 16px;
-      line-height: 24px;
     }
-    .article_img_main {
+    .main-article-img {
       max-width: 100%;
       height: auto;
       border: 15px solid #fff;
@@ -102,20 +117,20 @@ body {
     }
   }
   .old-article-section {
-    margin: 10px 10px 20px 20px;
+    margin: $article-section-margin;
     .old-article-section-1,
     .old-article-section-2,
     .old-article-section-3,
     .old-article-section-4 {
-      border: 1px solid rgba(223, 234, 204, 0.81);
-      border-radius: 10px;
-      background-color: #fff;
+      border: 1px solid $main-color;
+      @include border-radius (10px);
+      background-color: $white-color;
       h3 {
         text-align: center;
         font-size: 18px;
         padding-top: 16px;
       }
-      .article_img {
+      .old-article_img {
         max-width: 100%;
         height: auto;
         padding: 10px 0 16px 0;
@@ -123,23 +138,23 @@ body {
     }
   }
 }
-/* PAGINATION */
+/* pagination */
 .pagination {
   margin: 20px 0 0 10px;
   border-radius: 5px;
 }
 .pagination > li > a,
 .pagination > li > span {
-  color: rgb(114, 114, 114);
-  border: 1px solid rgba(223, 234, 204, 0.81);
+  color: $grey-text;
+  border: 1px solid $main-color;
 }
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: #23527c;
-  background-color: rgba(223, 234, 204, 0.81);
-  border-color: rgba(223, 234, 204, 0.81);
+  background-color: $main-color;
+  border-color: $main-color;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -147,44 +162,44 @@ body {
 .pagination > .active > span:hover,
 .pagination > .active > a:focus,
 .pagination > .active > span:focus {
-  color: rgb(114, 114, 114);
-  background-color: rgba(223, 234, 204, 0.81);
-  border-color: rgba(223, 234, 204, 0.81);
+  color: $grey-text;
+  background-color: $main-color;
+  border-color: $main-color;
 }
-/* ARTICLE.html */
-.open-main-article-section {
-  background-color: #fff;
+
+/*---------------------------------------------ARTICLE.html-----------------------------------------------------------*/
+.inside-section {
+  background-color: $white-color;
   margin-top: -30px;
-  border-top: 3px solid rgba(223, 234, 204, 0.81);
+  border-top: 3px solid $main-color;
   h2 {
-    text-align: center;
-    font-size: 28px;
-    padding: 25px 0 15px 0;
+    @extend %h2-style;
   }
   p {
-    text-align: justify;
+    @extend %p-style;
     padding: 20px 20px 20px 20px;
-    font-size: 16px;
-    line-height: 24px;
   }
-  .open-article_img_1 {
+  .inside-article_img_1 {
+    float: left;
     max-width: 40%;
     height: auto;
-    float: left;
     padding: 25px 15px 5px 20px;
   }
-  .open-article_img_2 {
+  .inside-article_img_2 {
+    float: right;
     max-width: 40%;
     height: auto;
-    float: right;
     padding: 15px 0 5px 15px;
   }
-  /*A RCHIVE.html */
+/*---------------------------------------------ARCHIVE.html-----------------------------------------------------------*/
+#archive-section {
+  padding-bottom: 50px;
+}
   h4 {
-    font-size: 20px;
-    font-weight: bold;
     text-align: left;
-    padding: 30px 0 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px 0 20px 0;
   }
   ul {
     padding-bottom: 50px;
@@ -194,7 +209,7 @@ body {
     }
   }
 
-  /* ABOUT.html */
+/*---------------------------------------------ABOUT.html-----------------------------------------------------------*/
   .about-avatar {
     border-radius: 50%;
     max-width: 300px;
@@ -203,7 +218,5 @@ body {
   }
 }
 /* ARCHIVE.html */
-#archive-section {
-  padding-bottom: 50px;
-}
+
 
