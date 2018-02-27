@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,65 +20,65 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 9, ../sass/stylesheet.scss */
-.articles .main-article-section h2, .inside-section h2 {
+.articles-section .articles-section__content-last h2, .article-section__content h2 {
   text-align: center;
   font-size: 28px;
   padding: 20px 0 5px 0;
 }
 
 /* line 14, ../sass/stylesheet.scss */
-.articles .main-article-section p, .inside-section p {
+.articles-section .articles-section__content-last p, .article-section__content p {
   text-align: justify;
   font-size: 16px;
   line-height: 24px;
 }
 
 /* line 19, ../sass/stylesheet.scss */
-#navbar .navbar-links a:hover, .articles a:hover {
+#navbar .navbar__navbar-links a:hover, .articles-section a:hover {
   text-decoration: none;
   color: #000;
   transition: all .7s;
@@ -124,18 +124,18 @@ body {
   padding: 30px 0;
 }
 /* line 46, ../sass/stylesheet.scss */
-#navbar .header-logo h1 {
+#navbar .navbar__navbar-logo h1 {
   color: #727272;
   float: right;
   font-size: 30px;
   padding-top: -10px;
 }
 /* line 53, ../sass/stylesheet.scss */
-#navbar .navbar-links {
+#navbar .navbar__navbar-links {
   font-size: 20px;
 }
 /* line 55, ../sass/stylesheet.scss */
-#navbar .navbar-links a {
+#navbar .navbar__navbar-links a {
   color: #727272;
   float: left;
   padding-left: 10px;
@@ -151,18 +151,18 @@ body {
   border-top: 3px solid rgba(223, 234, 204, 0.81);
 }
 /* line 73, ../sass/stylesheet.scss */
-.header-section .header-content {
+.header-section .header-section__content {
   height: 500px;
 }
 /* line 75, ../sass/stylesheet.scss */
-.header-section .header-content h1 {
+.header-section .header-section__content h1 {
   float: right;
   font-size: 34px;
   padding-top: 35px;
   color: rgba(223, 234, 204, 0.91);
 }
 /* line 81, ../sass/stylesheet.scss */
-.header-section .header-content p {
+.header-section .header-section__content p {
   color: rgba(223, 234, 204, 0.81);
   text-align: right;
   padding-top: 360px;
@@ -173,15 +173,15 @@ body {
 
 /* content */
 /* line 92, ../sass/stylesheet.scss */
-.articles {
+.articles-section {
   padding-top: 30px;
 }
 /* line 94, ../sass/stylesheet.scss */
-.articles a {
+.articles-section a {
   color: #727272;
 }
 /* line 100, ../sass/stylesheet.scss */
-.articles .main-article-section {
+.articles-section .articles-section__content-last {
   margin: 10px 10px 20px 20px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -190,65 +190,56 @@ body {
   border: 2px solid rgba(223, 234, 204, 0.81);
 }
 /* line 108, ../sass/stylesheet.scss */
-.articles .main-article-section p {
+.articles-section .articles-section__content-last p {
   padding: 20px 10px 20px 10px;
 }
 /* line 112, ../sass/stylesheet.scss */
-.articles .main-article-section .main-article-img {
+.articles-section .articles-section__content-last .main-article-img {
   max-width: 100%;
   height: auto;
   border: 15px solid #fff;
   border-radius: 10px;
 }
 /* line 119, ../sass/stylesheet.scss */
-.articles .old-article-section {
+.articles-section .articles-section__sidebar {
   margin: 10px 10px 20px 20px;
 }
 /* line 121, ../sass/stylesheet.scss */
-.articles .old-article-section .old-article-section-1,
-.articles .old-article-section .old-article-section-2,
-.articles .old-article-section .old-article-section-3,
-.articles .old-article-section .old-article-section-4 {
+.articles-section .articles-section__sidebar .articles-section__sidebar_inner {
   border: 1px solid rgba(223, 234, 204, 0.81);
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background-color: #fff;
 }
-/* line 128, ../sass/stylesheet.scss */
-.articles .old-article-section .old-article-section-1 h3,
-.articles .old-article-section .old-article-section-2 h3,
-.articles .old-article-section .old-article-section-3 h3,
-.articles .old-article-section .old-article-section-4 h3 {
+/* line 125, ../sass/stylesheet.scss */
+.articles-section .articles-section__sidebar .articles-section__sidebar_inner h3 {
   text-align: center;
   font-size: 18px;
   padding-top: 16px;
 }
-/* line 133, ../sass/stylesheet.scss */
-.articles .old-article-section .old-article-section-1 .old-article_img,
-.articles .old-article-section .old-article-section-2 .old-article_img,
-.articles .old-article-section .old-article-section-3 .old-article_img,
-.articles .old-article-section .old-article-section-4 .old-article_img {
+/* line 130, ../sass/stylesheet.scss */
+.articles-section .articles-section__sidebar .articles-section__sidebar_inner .old-article_img {
   max-width: 100%;
   height: auto;
   padding: 10px 0 16px 0;
 }
 
 /* pagination */
-/* line 142, ../sass/stylesheet.scss */
+/* line 139, ../sass/stylesheet.scss */
 .pagination {
   margin: 20px 0 0 10px;
   border-radius: 5px;
 }
 
-/* line 146, ../sass/stylesheet.scss */
+/* line 143, ../sass/stylesheet.scss */
 .pagination > li > a,
 .pagination > li > span {
   color: #727272;
   border: 1px solid rgba(223, 234, 204, 0.81);
 }
 
-/* line 151, ../sass/stylesheet.scss */
+/* line 148, ../sass/stylesheet.scss */
 .pagination > li > a:hover,
 .pagination > li > span:hover,
 .pagination > li > a:focus,
@@ -258,7 +249,7 @@ body {
   border-color: rgba(223, 234, 204, 0.81);
 }
 
-/* line 159, ../sass/stylesheet.scss */
+/* line 156, ../sass/stylesheet.scss */
 .pagination > .active > a,
 .pagination > .active > span,
 .pagination > .active > a:hover,
@@ -271,54 +262,54 @@ body {
 }
 
 /*---------------------------------------------ARTICLE.html-----------------------------------------------------------*/
-/* line 171, ../sass/stylesheet.scss */
-.inside-section {
+/* line 168, ../sass/stylesheet.scss */
+.article-section__content {
   background-color: #fff;
   margin-top: -30px;
   border-top: 3px solid rgba(223, 234, 204, 0.81);
   /*---------------------------------------------ARCHIVE.html-----------------------------------------------------------*/
   /*---------------------------------------------ABOUT.html-----------------------------------------------------------*/
 }
-/* line 178, ../sass/stylesheet.scss */
-.inside-section p {
+/* line 175, ../sass/stylesheet.scss */
+.article-section__content p {
   padding: 20px 20px 20px 20px;
 }
-/* line 182, ../sass/stylesheet.scss */
-.inside-section .inside-article_img_1 {
+/* line 179, ../sass/stylesheet.scss */
+.article-section__content .inside-article_img_1 {
   float: left;
   max-width: 40%;
   height: auto;
   padding: 25px 15px 5px 20px;
 }
-/* line 188, ../sass/stylesheet.scss */
-.inside-section .inside-article_img_2 {
+/* line 185, ../sass/stylesheet.scss */
+.article-section__content .inside-article_img_2 {
   float: right;
   max-width: 40%;
   height: auto;
   padding: 15px 0 5px 15px;
 }
-/* line 195, ../sass/stylesheet.scss */
-.inside-section #archive-section {
+/* line 192, ../sass/stylesheet.scss */
+.article-section__content #archive-section {
   padding-bottom: 50px;
 }
-/* line 198, ../sass/stylesheet.scss */
-.inside-section h4 {
+/* line 195, ../sass/stylesheet.scss */
+.article-section__content h4 {
   text-align: left;
   font-size: 20px;
   font-weight: bold;
   padding: 30px 0 20px 0;
 }
-/* line 204, ../sass/stylesheet.scss */
-.inside-section ul {
+/* line 201, ../sass/stylesheet.scss */
+.article-section__content ul {
   padding-bottom: 50px;
 }
-/* line 206, ../sass/stylesheet.scss */
-.inside-section ul li {
+/* line 203, ../sass/stylesheet.scss */
+.article-section__content ul li {
   text-align: left;
   padding-bottom: 5px;
 }
-/* line 213, ../sass/stylesheet.scss */
-.inside-section .about-avatar {
+/* line 210, ../sass/stylesheet.scss */
+.article-section__content .about-avatar {
   border-radius: 50%;
   max-width: 300px;
   padding: 25px 25px 15px 10px;

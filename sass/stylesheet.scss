@@ -42,7 +42,7 @@ body {
 }
 #navbar {
   padding: 30px 0;
-  .header-logo {
+  .navbar__navbar-logo {
     h1 {
       color: $grey-text;
       float: right;
@@ -50,7 +50,7 @@ body {
       padding-top: -10px;
     }
   }
-  .navbar-links {
+  .navbar__navbar-links {
     font-size: 20px;
     a {
       color: $grey-text;
@@ -70,7 +70,7 @@ body {
   background-size: cover;
   max-height: 500px;
   border-top: 3px solid $main-color;
-  .header-content {
+  .header-section__content {
     height: 500px;
     h1 {
       float: right;
@@ -89,7 +89,7 @@ body {
   }
 }
 /* content */
-.articles {
+.articles-section {
   padding-top: 30px;
   a {
     color: $grey-text;
@@ -97,7 +97,7 @@ body {
       @extend %links-hover;
     }
   }
-  .main-article-section {
+  .articles-section__content-last {
     margin: $article-section-margin;
     @include border-radius (10px);
     background-color: $white-color;
@@ -116,12 +116,9 @@ body {
       border-radius: 10px;
     }
   }
-  .old-article-section {
+  .articles-section__sidebar {
     margin: $article-section-margin;
-    .old-article-section-1,
-    .old-article-section-2,
-    .old-article-section-3,
-    .old-article-section-4 {
+    .articles-section__sidebar_inner {
       border: 1px solid $main-color;
       @include border-radius (10px);
       background-color: $white-color;
@@ -168,7 +165,7 @@ body {
 }
 
 /*---------------------------------------------ARTICLE.html-----------------------------------------------------------*/
-.inside-section {
+.article-section__content {
   background-color: $white-color;
   margin-top: -30px;
   border-top: 3px solid $main-color;
